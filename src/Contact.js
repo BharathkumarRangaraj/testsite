@@ -8,7 +8,7 @@ const Contact = () => {
       <Link to="/home">home</Link>
       <h2>gt branch2</h2>
       <h1>hello all new th</h1>
-      <h4>contacts add bracnh2</h4>
+      <h4>contacts add bracnh2ffe</h4>
     </div>
   );
 };
