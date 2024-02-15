@@ -1,14 +1,29 @@
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import "./App.css";
-import Body from "./Components/Body";
-import Header from "./Components/Header";
-import Footer from "./Components/Footer";
+
+import Contact from "./Contact";
+import Home from "./Home.js";
+
+const router =
+  createBrowserRouter[
+    {
+      Path: "/",
+      Element: <Home />,
+      children: [
+        {
+          path: "/contact",
+          Element: <Contact />,
+        },
+      ],
+    }
+  ];
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Body />
-      <Footer />
+      <RouterProvider router={router}>
+        <Home />
+      </RouterProvider>
     </div>
   );
 }
